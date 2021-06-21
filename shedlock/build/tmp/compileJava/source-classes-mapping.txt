@@ -1,0 +1,11 @@
+dell/com/shedlock/ShedlockApplication.java
+ dell.com.shedlock.ShedlockApplication
+dell/com/shedlock/configuration/SpringBatchConfiguration.java
+ dell.com.shedlock.configuration.SpringBatchConfiguration
+ dell.com.shedlock.configuration.SpringBatchConfiguration$1
+dell/com/shedlock/configuration/SchedlockConfiguration.java
+ dell.com.shedlock.configuration.SchedlockConfiguration
+dell/com/shedlock/model/User.java
+ dell.com.shedlock.model.User
+dell/com/shedlock/job/SomeScheduledTask.java
+ dell.com.shedlock.job.SomeScheduledTask
