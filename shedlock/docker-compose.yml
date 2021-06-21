@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  instance-job1:
+    restart: always
+    container_name: job1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spring-job
+    networks:
+      - spring-job-network
+  instance-job2:
+    restart : always
+    container_name: job2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spring-job
+    networks:
+      - spring-job-network
+  db-job:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 392035
+      POSTGRES_USER: postgres
+      POSTGRES_DB: poc-schedlock
+    ports:
+      - 5432:5432
+    networks:
+      - spring-job-network
+
+networks:
+  spring-job-network:
+    driver: bridge
